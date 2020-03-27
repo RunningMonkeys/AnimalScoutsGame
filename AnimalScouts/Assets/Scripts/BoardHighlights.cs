@@ -1,0 +1,58 @@
+﻿
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BoardHighlights : MonoBehaviour
+{
+    public static BoardHighlights Instance{set;get;}
+	
+	public GameObject highlightPrefab;
+	private List<GameObject> highlights;
+	
+	private void Start()
+	{
+		highlights = new List<GameObject>();
+		Instance = this;
+	}
+	
+	
+	private GameObject GetHighlightObject()
+	{
+		GameObject go = highlights.Find(g => !g.activeSelf);
+		
+		if(go == null)
+		{
+			go = Instantiate(highlightPrefab);
+			highlights.Add(go);
+		}
+		
+		go.SetActive(true);
+		
+		return go;
+		
+	}
+	
+	
+	public void HighlightAllowedMoves(bool[,] moves)
+	{
+		for(int i = 0;i < BoardManager.Instance.xSize; i++)
+		{
+			for(int j = 0;j < BoardManager.Instance.ySize; j++)
+			{
+				if(moves[i,j])
+				{
+					GameObject go = GetHighlightObject();
+					go.transform.position = new Vector3(i+0.5f,0,j+0.5f);
+				}
+			}
+		}
+	}
+	
+	public void Hidehighlights()
+	{
+		foreach(GameObject go in highlights)
+			go.SetActive(false);
+		
+	}
+}
