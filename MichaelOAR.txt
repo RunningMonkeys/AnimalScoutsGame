@@ -1,29 +1,18 @@
 
 
-Build Floor of play area (3-4 Hours)
-	- One large cube to hold game board
-	- Game board (1-2 Hours)
+Build Floor of play area  Fri by 11pm (3-4 Hours)
+	- One large cube to hold game board (1 Hours)
+	- Game board (2-3 Hours)
 		- 8X16= 128 individual cubes for each of the 
 		  floor tiles.
-	- Terrian out of game board area (1-2 Hours)
+	- Terrian out of game board area (1 Hours)
 
 
-Seperating Players sides (3-4 hours)
-	- Add Red and blue planes to each side of board.
-	- Add cube to middle of game board
-	- Add Start to player side that begins game
-	-
+Seperating Players sides Mon by 11pm (3-4 Hours)
+	- Add Red and blue planes to each side of board. (1 Hours)
+	- Add cube to middle of game board (1 Hours)
+	- Add sign to show who turn it is (1 Hours)
 
-
-
-
-
-
-
-* Notes: when creating floors follow theses setting to unsure alignment
-	Board = Postition [Y = 0]
-	Sides = Postition [X = 4], [Y = -0.01]
-	Grass = Postition [Y = -0.02]
 
 
 
