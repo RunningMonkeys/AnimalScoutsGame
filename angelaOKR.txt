@@ -1,0 +1,4 @@
+Design Document Formal Elements-- Mon(3/16) by 9am (estimate: 1 hr)
+Basic networking setup-- Tue(3/31) by 8pm (estimate: 3hr)
+	- Make sure only 2 players can join game
+	- Game can't begin until both are done setting terrain
