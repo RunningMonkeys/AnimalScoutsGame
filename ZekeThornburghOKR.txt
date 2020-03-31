@@ -1,0 +1,4 @@
+Schedule and deliveable:
+	Basic movement for characters. -- Sunday by 8pm (estimate 6 hours)
+	basic models for characters -- Sunday by 10pm (estimate 2 hours)
+	Terrain tiles setup -- tuesday by midnight (estimate 4 hours)
