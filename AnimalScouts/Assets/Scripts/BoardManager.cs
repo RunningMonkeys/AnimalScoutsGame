@@ -160,21 +160,23 @@ public class BoardManager : NetworkBehaviour
 			
 			if(p != null && p.isRed != isRedTurn)
 			{
-				// NetworkIdentity ni = p.GetComponent<NetworkIdentity>();
-				// if (ni != null && !isServer) {
-	   //              CmdDestroy(p.gameObject , ni);
-	   //          }
+				NetworkIdentity ni = p.GetComponent<NetworkIdentity>();
+				if (ni != null && !isServer) {
+	                CmdDestroy(p.gameObject , ni);
+	            }
 
-	   //          // this.GetComponent<NetworkObjectDestroyer>().TellServerToDestroyObject(p.gameObject);
-    //             CmdDestroy(p.gameObject, ni);
-    //             if (isServer) {
-    //                 RpcDestroy(p.gameObject);
-    //             }
-    //             Destroy(p.gameObject);
+	            // this.GetComponent<NetworkObjectDestroyer>().TellServerToDestroyObject(p.gameObject);
+                // CmdDestroy(p.gameObject, ni);
+                // if (isServer) {
+                //     RpcDestroy(p.gameObject);
+                // }
+                Destroy(p.gameObject);
+
+                
 				// capture the piece
-				activePlayer.Remove(p.gameObject);
+				// activePlayer.Remove(p.gameObject);
 
-				Destroy(p.gameObject);
+				// Destroy(p.gameObject);
 			}
 			
 			Pieces[selectedPiece.CurrentX, selectedPiece.CurrentY] = null;
