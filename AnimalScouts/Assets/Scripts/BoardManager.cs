@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.UI;
 
-
-public class BoardManager : MonoBehaviour
+public class BoardManager : NetworkBehaviour
 { 
 
 
@@ -116,6 +118,8 @@ public class BoardManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    	// if(!isLocalPlayer)
+     //        return;
 		SelectionObject = Instantiate(SelectionPrefab, GetTileCenter(0,0) , Quaternion.identity) as GameObject;
 		Instance = this;
 		tileGrid = new int[xSize,ySize];
@@ -151,11 +155,25 @@ public class BoardManager : MonoBehaviour
 		if(allowedMoves[x,y])
 		{
 			Piece p = Pieces[x,y];
+
+			
 			
 			if(p != null && p.isRed != isRedTurn)
 			{
-				//capture the piece
+				// NetworkIdentity ni = p.GetComponent<NetworkIdentity>();
+				// if (ni != null && !isServer) {
+	   //              CmdDestroy(p.gameObject , ni);
+	   //          }
+
+	   //          // this.GetComponent<NetworkObjectDestroyer>().TellServerToDestroyObject(p.gameObject);
+    //             CmdDestroy(p.gameObject, ni);
+    //             if (isServer) {
+    //                 RpcDestroy(p.gameObject);
+    //             }
+    //             Destroy(p.gameObject);
+				// capture the piece
 				activePlayer.Remove(p.gameObject);
+
 				Destroy(p.gameObject);
 			}
 			
@@ -174,9 +192,12 @@ public class BoardManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    	
 		UpdateSelection();
         //DrawBoard();
-		
+		// if(!isLocalPlayer)
+  //           return; 
+
 		if(Input.GetMouseButtonDown(0))
 		{
 			if(selectionX >=0 && selectionY>=0)
@@ -196,5 +217,21 @@ public class BoardManager : MonoBehaviour
 			BoardHighlights.Instance.Hidehighlights();
 			selectedPiece = null;
 		}
+    }
+
+    [ClientRpc]
+    void RpcDestroy(GameObject obj){
+    	//capture the piece
+				activePlayer.Remove(obj);
+				NetworkServer.Destroy(obj);
+				Destroy(obj);
+    }
+
+    [Command]
+    void CmdDestroy(GameObject obj, NetworkIdentity ni){
+    	ni.AssignClientAuthority(connectionToClient);
+    	RpcDestroy(obj);
+    	Destroy(obj);
+    	ni.RemoveClientAuthority(connectionToClient);
     }
 }
