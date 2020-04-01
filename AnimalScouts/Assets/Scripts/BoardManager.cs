@@ -35,6 +35,10 @@ public class BoardManager : NetworkBehaviour
 	
 	private void SpawnBoard()
 	{
+		if(isLocalPlayer)
+		{
+			return;
+		}
 		for(int i = 0; i < xSize; i++)
 		{
 			for(int j = 0; j< ySize; j++)
@@ -45,6 +49,10 @@ public class BoardManager : NetworkBehaviour
 	}
 	private void SpawnAllPlayers()
 	{
+		if(isLocalPlayer)
+		{
+			return;
+		}
 		Pieces = new Piece[xSize,ySize];
 		activePlayer = new List<GameObject>();
 		SpawnPlayer(0,0,0);
@@ -71,6 +79,10 @@ public class BoardManager : NetworkBehaviour
 	
 	private void SpawnPlayer(int index, int x, int y)
 	{
+		if(isLocalPlayer)
+		{
+			return;
+		}
 		GameObject go;
 		if(index % 2 == 1)
 		{
@@ -85,11 +97,17 @@ public class BoardManager : NetworkBehaviour
 		Pieces[x,y].setPosition(x,y);
 		go.transform.SetParent(transform);
 		activePlayer.Add(go);
+		NetworkServer.Spawn(go);
 	}
 	
 	private void SpawnTile(int index, int x, int y){
+		if(isLocalPlayer)
+		{
+			return;
+		}
 		GameObject go;
 		go = Instantiate(tilePrefabs[index], GetTileCenter(x,y), Quaternion.identity) as GameObject;
+		NetworkServer.Spawn(go);
 	}
 	
 	
@@ -98,6 +116,7 @@ public class BoardManager : NetworkBehaviour
 		if(!Camera.main) return;
 		
 		RaycastHit hit;
+		
 		if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition),out hit,25.0f,LayerMask.GetMask("Board Plane")))
 		{
 			selectionX = (int)hit.point.x;
@@ -118,8 +137,8 @@ public class BoardManager : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    	// if(!isLocalPlayer)
-     //        return;
+    	if(isLocalPlayer)
+           return;
 		SelectionObject = Instantiate(SelectionPrefab, GetTileCenter(0,0) , Quaternion.identity) as GameObject;
 		Instance = this;
 		tileGrid = new int[xSize,ySize];
@@ -155,9 +174,6 @@ public class BoardManager : NetworkBehaviour
 		if(allowedMoves[x,y])
 		{
 			Piece p = Pieces[x,y];
-
-			
-			
 			if(p != null && p.isRed != isRedTurn)
 			{
 				NetworkIdentity ni = p.GetComponent<NetworkIdentity>();
@@ -165,12 +181,12 @@ public class BoardManager : NetworkBehaviour
 	                CmdDestroy(p.gameObject , ni);
 	            }
 
-	            // this.GetComponent<NetworkObjectDestroyer>().TellServerToDestroyObject(p.gameObject);
-                // CmdDestroy(p.gameObject, ni);
-                // if (isServer) {
-                //     RpcDestroy(p.gameObject);
-                // }
-                Destroy(p.gameObject);
+	             //this.GetComponent<NetworkObjectDestroyer>().TellServerToDestroyObject(p.gameObject);
+                 CmdDestroy(p.gameObject, ni);
+                 if (isServer) {
+                     RpcDestroy(p.gameObject);
+                 }
+                //Destroy(p.gameObject);
 
                 
 				// capture the piece
@@ -194,11 +210,10 @@ public class BoardManager : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-    	
+    	if(isLocalPlayer)
+            return;
 		UpdateSelection();
-        //DrawBoard();
-		// if(!isLocalPlayer)
-  //           return; 
+		  
 
 		if(Input.GetMouseButtonDown(0))
 		{
@@ -220,6 +235,13 @@ public class BoardManager : NetworkBehaviour
 			selectedPiece = null;
 		}
     }
+	
+	[Command]
+	void CmdSpawnPlayer(GameObject obj)
+	{
+		
+		
+	}
 
     [ClientRpc]
     void RpcDestroy(GameObject obj){

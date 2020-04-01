@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.UI;
 
-public abstract class Piece : MonoBehaviour
+public abstract class Piece : NetworkBehaviour
 {
     // Start is called before the first frame update
     public int CurrentX{set;get;}
