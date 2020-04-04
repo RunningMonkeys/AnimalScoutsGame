@@ -14,7 +14,8 @@ public class QuitGame : MonoBehaviour
     void Update()
     {
         // Quits the game
-        if (Input.GetKey(KeyCode.Y))
+		//what do we want this to be?
+        if (Input.GetKey(KeyCode.Q))
         {
             Application.Quit();
         }
