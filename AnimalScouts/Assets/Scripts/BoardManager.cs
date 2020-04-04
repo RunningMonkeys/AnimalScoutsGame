@@ -35,7 +35,7 @@ public class BoardManager : NetworkBehaviour
 	
 	private void SpawnBoard()
 	{
-		if(isLocalPlayer)
+		if(!isServer)
 		{
 			return;
 		}
@@ -49,10 +49,6 @@ public class BoardManager : NetworkBehaviour
 	}
 	private void SpawnAllPlayers()
 	{
-		if(isLocalPlayer)
-		{
-			return;
-		}
 		Pieces = new Piece[xSize,ySize];
 		activePlayer = new List<GameObject>();
 		SpawnPlayer(0,0,0);
@@ -79,10 +75,7 @@ public class BoardManager : NetworkBehaviour
 	
 	private void SpawnPlayer(int index, int x, int y)
 	{
-		if(isLocalPlayer)
-		{
-			return;
-		}
+		
 		GameObject go;
 		if(index % 2 == 1)
 		{
@@ -97,14 +90,11 @@ public class BoardManager : NetworkBehaviour
 		Pieces[x,y].setPosition(x,y);
 		go.transform.SetParent(transform);
 		activePlayer.Add(go);
+		
 		NetworkServer.Spawn(go);
 	}
 	
 	private void SpawnTile(int index, int x, int y){
-		if(isLocalPlayer)
-		{
-			return;
-		}
 		GameObject go;
 		go = Instantiate(tilePrefabs[index], GetTileCenter(x,y), Quaternion.identity) as GameObject;
 		NetworkServer.Spawn(go);
@@ -137,8 +127,6 @@ public class BoardManager : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    	if(isLocalPlayer)
-           return;
 		SelectionObject = Instantiate(SelectionPrefab, GetTileCenter(0,0) , Quaternion.identity) as GameObject;
 		Instance = this;
 		tileGrid = new int[xSize,ySize];
@@ -187,11 +175,8 @@ public class BoardManager : NetworkBehaviour
                      RpcDestroy(p.gameObject);
                  }
                 //Destroy(p.gameObject);
-
-                
 				// capture the piece
 				// activePlayer.Remove(p.gameObject);
-
 				// Destroy(p.gameObject);
 			}
 			
@@ -210,8 +195,7 @@ public class BoardManager : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-    	if(isLocalPlayer)
-            return;
+    	
 		UpdateSelection();
 		  
 
@@ -236,12 +220,7 @@ public class BoardManager : NetworkBehaviour
 		}
     }
 	
-	[Command]
-	void CmdSpawnPlayer(GameObject obj)
-	{
-		
-		
-	}
+	
 
     [ClientRpc]
     void RpcDestroy(GameObject obj){
