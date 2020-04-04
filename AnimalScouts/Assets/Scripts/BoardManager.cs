@@ -49,8 +49,10 @@ public class BoardManager : NetworkBehaviour
 	}
 	private void SpawnAllPlayers()
 	{
+		//I was having problems setting up Pieces for the non servers for a while before i fixed it.
 		Pieces = new Piece[xSize,ySize];
 		activePlayer = new List<GameObject>();
+		//spawning is hardcoded in right now
 		SpawnPlayer(0,0,0);
 		SpawnPlayer(1,7,15);
 		SpawnPlayer(2,5,1);
@@ -90,7 +92,7 @@ public class BoardManager : NetworkBehaviour
 		Pieces[x,y].setPosition(x,y);
 		go.transform.SetParent(transform);
 		activePlayer.Add(go);
-		
+		//this is something we were misssing before that helped spawn the objects over all players
 		NetworkServer.Spawn(go);
 	}
 	
@@ -103,6 +105,7 @@ public class BoardManager : NetworkBehaviour
 	
 	private void UpdateSelection()
 	{
+		
 		if(!Camera.main) return;
 		
 		RaycastHit hit;
@@ -220,8 +223,8 @@ public class BoardManager : NetworkBehaviour
 		}
     }
 	
+	//should prob add a set for select and move? maybe fine not to but IDK
 	
-
     [ClientRpc]
     void RpcDestroy(GameObject obj){
     	//capture the piece

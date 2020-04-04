@@ -13,6 +13,7 @@ public class Wolf : Piece
 		for(int i = 1; i <= numMoves && CurrentX+i< xSize; i++)
 		{
 			p = BoardManager.Instance.Pieces[CurrentX+i,CurrentY];
+			//Check terrain
 			if(p == null)
 			{
 				r[CurrentX+i,CurrentY] = true;
