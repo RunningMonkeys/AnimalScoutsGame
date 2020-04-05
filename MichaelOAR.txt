@@ -1,17 +1,39 @@
 
 
-Build Floor of play area  Fri by 11pm (3-4 Hours)
-	- One large cube to hold game board (1 Hours)
-	- Game board (2-3 Hours)
-		- 8X16= 128 individual cubes for each of the 
-		  floor tiles.
-	- Terrian out of game board area (1 Hours)
+Michael Ybarra 
 
 
-Seperating Players sides Mon by 11pm (3-4 Hours)
-	- Add Red and blue planes to each side of board. (1 Hours)
-	- Add cube to middle of game board (1 Hours)
-	- Add sign to show who turn it is (1 Hours)
+
+
+Floor(est ~ 8 Hours)
+
+	Build Floor of play area  Fri by 11pm (3-4 Hours)
+		- One large cube to hold game board (1 Hours)
+		- Game board (2-3 Hours)
+			- 8X16= 128 individual cubes for each of the 
+			  floor tiles.
+		- Terrian out of game board area (1 Hours)
+
+
+	Seperating Players sides Mon by 11pm (3-4 Hours)
+		- Add Red and blue planes to each side of board. (1 Hours)
+		- Add cube to middle of game board (1 Hours)
+		- Add sign to show who turn it is (1 Hours)
+
+
+
+
+Spectators(est ~ 7-8 Hours)
+
+	Mave model move Sun by 7pm (3 Hours)
+		- Find a Model  (1 Hours)
+		- Add animation  (1 Hours)
+		- Build into scene (1 Hours)
+
+
+	Build the bleachers Mon by 7pm (3-4 Hours)
+		- Create area for crowd (1 Hours)
+		- Add models w/ different motions (2-3 Hours)
 
 
 
@@ -20,7 +42,7 @@ Seperating Players sides Mon by 11pm (3-4 Hours)
 
 
 3D Models:
-	- Sonic 
+	- Sonic Dancing
 		https://sketchfab.com/3d-models/sonic-14e3137b29cb4d5ba3ead4f932511d8b
 		SONIC
 		3D Model
@@ -54,4 +76,3 @@ Refernces:
 
 
 
-	
