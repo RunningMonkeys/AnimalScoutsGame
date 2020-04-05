@@ -17,3 +17,41 @@ Seperating Players sides Mon by 11pm (3-4 Hours)
 
 
 
+
+
+3D Models:
+	- Sonic 
+		https://sketchfab.com/3d-models/sonic-14e3137b29cb4d5ba3ead4f932511d8b
+		SONIC
+		3D Model
+		samsco
+
+
+
+SoftWare:
+	Uinty
+	Blender
+	Mixamo
+	Visual Studio
+	Sublime Text 
+
+
+Refernces:
+	- Adding skeleton and animation to 3D Model
+	https://www.youtube.com/watch?v=HI5nUQ6Tzjo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
