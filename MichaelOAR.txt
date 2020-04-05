@@ -48,6 +48,23 @@ Spectators(est ~ 7-8 Hours)
 		3D Model
 		samsco
 
+	- Chicken Waving
+		https://sketchfab.com/3d-models/pirate-chicken-ad9c3e91ec494617a3fd842301dab227#download
+		Pirate Chicken
+		3D Model
+		Drackofeu
+
+
+
+
+
+
+Refernces:
+	- Adding skeleton and animation to 3D Model
+	https://www.youtube.com/watch?v=HI5nUQ6Tzjo
+	
+
+
 
 
 SoftWare:
@@ -56,14 +73,6 @@ SoftWare:
 	Mixamo
 	Visual Studio
 	Sublime Text 
-
-
-Refernces:
-	- Adding skeleton and animation to 3D Model
-	https://www.youtube.com/watch?v=HI5nUQ6Tzjo
-
-
-
 
 
 
