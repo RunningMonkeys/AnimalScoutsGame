@@ -42,13 +42,7 @@ Spectators(est ~ 7-8 Hours)
 
 
 3D Models:
-	- Sonic Dancing
-		https://sketchfab.com/3d-models/sonic-14e3137b29cb4d5ba3ead4f932511d8b
-		SONIC
-		3D Model
-		samsco
-
-	- Chicken Waving
+	- Chicken
 		https://sketchfab.com/3d-models/pirate-chicken-ad9c3e91ec494617a3fd842301dab227#download
 		Pirate Chicken
 		3D Model
@@ -60,19 +54,40 @@ Spectators(est ~ 7-8 Hours)
 		3D Model
 		Miaru3d
 
+	- Rabbit
+		https://sketchfab.com/3d-models/thorn-44795759d6144f61990796c02088665f
+		Thorn
+		3D Model
+		salmon97
+			
+	- Pikachu
+		https://sketchfab.com/3d-models/pikachu-c22dab8fc3064c76a0c502d64555a74f
+		Pikachu
+		3D Model
+		jacobjksn42
+
+	- Bleachers
+		https://sketchfab.com/3d-models/cheap-seats-short-2cb49ee9a63741d489c0ec2606c3f98e
+		Cheap Seats Short
+		3D Model
+		daedaljs
 
 
 
 Refernces:
 	- Adding skeleton and animation to 3D Model
 	https://www.youtube.com/watch?v=HI5nUQ6Tzjo
+
+	- Creating State FSM
+	https://www.youtube.com/watch?v=PaLD1t-kIwM&t=809s
+	https://github.com/joeythelantern/StateMachineExample
 	
 
 
 
 
 SoftWare:
-	Uinty
+	Unity
 	Blender
 	Mixamo
 	Visual Studio
