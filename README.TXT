@@ -1,12 +1,25 @@
 
-For the Mecanim pikachu, a bunny and a chicken were selected because they
-were the only FBX files the correctly loaded into Maximo. 
+
+
+
+
+
+
+
+
+Mecanim:  Pikachu, a bunny and a chicken were selected because they
+		  were the only FBX files the correctly loaded into Maximo. 
 
 Pikachu(s) - both are set to dance then idle loop. with 2 - 3 different dances 
-			 between them. 
+			 between them.
 
+Bunny(s) - first experiment they both cheer and wave each offset both in a loop. 
 
+Chicken(s) - Each one has is setup with different gestures, idles, dances 
+			 and waves. 
 
+Cheerleader(s) - they are programmed to dance in 3 - 4 different dances with out 
+				 any idle. that feature would not work with them.
 
 
 
