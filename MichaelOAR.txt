@@ -35,6 +35,12 @@ Spectators(est ~ 7-8 Hours)
 		- Create area for crowd (1 Hours)
 		- Add models w/ different motions (2-3 Hours)
 
+Sounds:
+	- BG Music
+	Album name: Mario Party
+	Song name: Opening
+	https://downloads.khinsider.com/game-soundtracks/album/mario-party/01%2520Opening.mp3
+
 
 2D:
 	- Grass
@@ -51,6 +57,7 @@ Spectators(est ~ 7-8 Hours)
 	Lucrezia Carnelos
 	Venice, IT.
 	instagram.com/ciabattespugnose
+
 
 
 3D Models:
