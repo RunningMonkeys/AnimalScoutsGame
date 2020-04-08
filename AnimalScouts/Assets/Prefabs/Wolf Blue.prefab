@@ -931,6 +931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593425828747018917}
   - component: {fileID: 3505340595649794159}
+  - component: {fileID: 7114241149287872970}
   m_Layer: 0
   m_Name: Wolf Blue
   m_TagString: Untagged
@@ -983,6 +984,25 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 0
+--- !u!95 &7114241149287872970
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6192939965487802027}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9de9cf83d3f2b4f26abc38d3c7fd5f43, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6253922915086256466
 GameObject:
   m_ObjectHideFlags: 0
