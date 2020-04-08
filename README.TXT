@@ -1,4 +1,9 @@
 
+For the Mecanim pikachu, a bunny and a chicken were selected because they
+were the only FBX files the correctly loaded into Maximo. 
+
+Pikachu(s) - both are set to dance then idle loop. with 2 - 3 different dances 
+			 between them. 
 
 
 
