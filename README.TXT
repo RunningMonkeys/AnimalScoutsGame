@@ -4,11 +4,20 @@
 
 
 
+Game design, we wanted to offer the player key signs to know hows turn it is.
+Highlighted tiles show the player their only move chooses for each character.
+Audio feed back to acknowledge your turn is complete. For the music an kids 
+game was selected that was easy to listen to for the duration of the game. 
+Issues with networking makes this game playable with one computer. Back ground
+charaters set on different loop help keep the player distracted while waiting
+for the next player to move keeping the emersive feel. 
 
 
 
 Mecanim:  Pikachu, a bunny and a chicken were selected because they
 		  were the only FBX files the correctly loaded into Maximo. 
+		  The player cannot not move correctly and had to remain 
+		  stationary. 
 
 Pikachu(s) - both are set to dance then idle loop. with 2 - 3 different dances 
 			 between them.
