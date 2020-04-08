@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BoardManager : MonoBehaviour
 { 
-
+	private AudioSource aud;
 
 	public int xSize = 8;
 	public int ySize = 16;
@@ -116,6 +116,8 @@ public class BoardManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    	aud = GetComponent<AudioSource>();
+
 		SelectionObject = Instantiate(SelectionPrefab, GetTileCenter(0,0) , Quaternion.identity) as GameObject;
 		Instance = this;
 		tileGrid = new int[xSize,ySize];
@@ -174,6 +176,7 @@ public class BoardManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
 		UpdateSelection();
         //DrawBoard();
 		
@@ -187,6 +190,8 @@ public class BoardManager : MonoBehaviour
 				}
 				else{
 					MovePiece(selectionX,selectionY);
+
+					aud.Play();
 				}
 			}
 		}
