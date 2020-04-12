@@ -139,6 +139,8 @@ public class BoardManager : MonoBehaviour
 		else if(Pieces[x,y].isRed != isRedTurn)
 			return;
 		
+		Pieces[x,y].playSelectNoise();
+		
 		allowedMoves = Pieces[x,y].PossibleMove();
 		
 		
@@ -166,6 +168,7 @@ public class BoardManager : MonoBehaviour
 			Pieces[x,y] = selectedPiece;
 			Pieces[x,y].setPosition(x,y);
 			isRedTurn = !isRedTurn;
+			aud.Play();
 		}
 		BoardHighlights.Instance.Hidehighlights();
 		selectedPiece = null;
@@ -190,8 +193,6 @@ public class BoardManager : MonoBehaviour
 				}
 				else{
 					MovePiece(selectionX,selectionY);
-
-					aud.Play();
 				}
 			}
 		}

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Cougar : Piece
 {
-   public override bool[,] PossibleMove()
+	
+	public override bool[,] PossibleMove()
 	{
 		bool[,] r = new bool[xSize,ySize];
 		Piece p;

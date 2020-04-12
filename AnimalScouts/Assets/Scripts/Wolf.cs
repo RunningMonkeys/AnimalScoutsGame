@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Wolf : Piece
 {
-     public override bool[,] PossibleMove()
+	
+	
+	public override bool[,] PossibleMove()
 	{
 		bool[,] r = new bool[xSize,ySize];
 		Piece p;

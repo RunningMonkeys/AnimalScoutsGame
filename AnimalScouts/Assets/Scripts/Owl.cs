@@ -5,6 +5,7 @@ using UnityEngine;
 public class Owl : Piece
 {
 	
+	
     public override bool[,] PossibleMove()
 	{
 		bool[,] r = new bool[xSize,ySize];

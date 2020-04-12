@@ -11,9 +11,21 @@ public abstract class Piece : MonoBehaviour
 	public int ySize=16;
 	public int numMoves = 4;
 	
+	
 	public bool isRed;
 	
 	
+	private AudioSource PieceNoise;
+	
+	void Start()
+	{
+    	PieceNoise = GetComponent<AudioSource>();
+	}
+	
+	public virtual void playSelectNoise()
+	{
+		PieceNoise.Play();
+	}
 	
 	public void setPosition(int x, int y)
 	{

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Beaver : Piece
 {
+	
    public override bool[,] PossibleMove()
 	{
 		bool[,] r = new bool[xSize,ySize];
