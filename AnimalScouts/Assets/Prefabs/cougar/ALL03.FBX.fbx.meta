@@ -1,35 +1,11 @@
 fileFormatVersion: 2
-guid: 14d2c88cf5f554473a649b658d5fb540
+guid: 40ab20704aeb2439cb0c9f8c5df259b4
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
-      74: -4632942282872442860
-    second: metarig|attack
-  - first:
-      74: 738807553382607316
-    second: metarig|attack 2
-  - first:
-      74: -2301300282570486755
-    second: metarig|death
-  - first:
-      74: -3397465012434010853
-    second: metarig|hit
-  - first:
-      74: -4763625379994107575
-    second: metarig|Idel
-  - first:
-      74: -8284908221344111450
-    second: metarig|jump
-  - first:
-      74: -7526108461120376697
-    second: metarig|metarig|metarig|Idel|metarig|Idel
-  - first:
-      74: -5297019649661602221
-    second: metarig|run
-  - first:
-      74: -203655887218126122
-    second: mixamo.com
+      74: -2512297615743717694
+    second: idle+attack01+attack02+roar+die+eat+Get_Hit+walk01+Run+jump_01
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -50,7 +26,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -111,10 +87,10 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

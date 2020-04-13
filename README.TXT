@@ -92,6 +92,13 @@ Sounds:
 		3D Model
 		daedaljs
 
+	- Wolf
+		https://sketchfab.com/3d-models/wolf-e319f122c2474d3186b841b019fb0edd
+		Wolf
+		3D Model
+		Aleksandr Bessarabov
+
+
 
 
 Refernces:
