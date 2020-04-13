@@ -8913,8 +8913,8 @@ MonoBehaviour:
     type: 3}
   isRedTurn: 1
   playerPrefabs:
-  - {fileID: 2660770645219303148, guid: de50bb995abfe441cb4576f5c19b154a, type: 3}
-  - {fileID: 6366533899749550868, guid: 63f1c5e4291bf1444a2c0436e06a1c69, type: 3}
+  - {fileID: 4996052660601290479, guid: 23eb160a70da4435c9e8fba174704bd1, type: 3}
+  - {fileID: 270925030523087222, guid: 9c9fc99fcba6b4dbcbf3e0b5c6cbcdbc, type: 3}
   - {fileID: 769374733724392458, guid: a7956c76a0b62a74aa79d15911ee8025, type: 3}
   - {fileID: 2578108625811078910, guid: da3e9f7251f40c041b00a7224c04ee17, type: 3}
   - {fileID: 5811219408656674953, guid: 3beff3ead8f8745449990e289e6b06ba, type: 3}
