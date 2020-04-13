@@ -98,6 +98,29 @@ Sounds:
 		3D Model
 		Aleksandr Bessarabov
 
+	- Owl
+		https://sketchfab.com/3d-models/day-20-snowy-owl-745c105544784b9a80bbec49cccd1580
+		Day 20 - Snowy Owl
+		3D Model
+		Lilly!
+
+	- Beaver
+		https://sketchfab.com/3d-models/beaver-c59aeb5f5f904a50a8d78b21db9e9364
+		Beaver
+		3D Model
+		anderson estevam
+
+	- Cougar
+		https://sketchfab.com/3d-models/animation-lion-for-android-games-71657fb14e7440cc81b81bb3445f0bff
+		Animation lion for android Games
+		3D Model
+		montarov
+
+	- Lizard
+		https://sketchfab.com/3d-models/gecko-e443d31dc4de49e683f1674bdca468c1
+		Gecko
+		3D Model
+		LupenWonse
 
 
 
