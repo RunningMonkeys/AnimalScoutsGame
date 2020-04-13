@@ -1236,6 +1236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6577321888971955010}
   - component: {fileID: 3876847940195038776}
+  - component: {fileID: -1470525911889797365}
   m_Layer: 0
   m_Name: CougarBlue
   m_TagString: Untagged
@@ -1284,6 +1285,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-1470525911889797365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7862175198593018193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9e3758653096e4b966015edd94629d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSize: 8
+  ySize: 16
+  numMoves: 4
+  isRed: 0
 --- !u!1 &8818149154604411242
 GameObject:
   m_ObjectHideFlags: 0

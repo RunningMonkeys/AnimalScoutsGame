@@ -42,6 +42,26 @@ Sounds:
 	Song name: Opening
 	https://downloads.khinsider.com/game-soundtracks/album/mario-party/01%2520Opening.mp3
 
+	- Owl
+	http://soundbible.com/1851-Horned-Owl.html
+	Title: Horned Owl
+	Uploaded: 06.07.11
+	License: Attribution 3.0
+	Recorded by Mike Koenig
+
+	- Cougar
+	http://soundbible.com/1416-Lion.html
+	Title: Lion
+	Uploaded: 05.08.10
+	License: Attribution 3.0
+	Recorded by Mike Koenig
+
+	- Wolf
+	http://soundbible.com/294-Coyote-Call.html
+	Title: Coyote Call
+	Uploaded: 05.17.09
+	License: Personal Use Only
+
 
 2D:
 	- Grass

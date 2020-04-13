@@ -444,6 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 37687483917661563}
   - component: {fileID: 7930811801979541505}
+  - component: {fileID: -1748038244702558658}
   m_Layer: 0
   m_Name: Gecko Red
   m_TagString: Untagged
@@ -489,6 +490,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-1748038244702558658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3953805647546746728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddff13c546e38d4183021c1ec2c0313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSize: 8
+  ySize: 16
+  numMoves: 4
+  isRed: 1
 --- !u!1 &3974727480845609465
 GameObject:
   m_ObjectHideFlags: 0

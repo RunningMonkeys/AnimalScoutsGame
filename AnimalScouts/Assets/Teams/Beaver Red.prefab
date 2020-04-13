@@ -3063,6 +3063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5429176161480268484}
   - component: {fileID: 2725325617193580478}
+  - component: {fileID: 2237304966048933528}
   m_Layer: 0
   m_Name: Beaver Red
   m_TagString: Untagged
@@ -3110,6 +3111,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2237304966048933528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9008069161168546007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a926b91de0d3ac1449bd0f35975af6df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSize: 8
+  ySize: 16
+  numMoves: 4
+  isRed: 1
 --- !u!1 &9121780560693154757
 GameObject:
   m_ObjectHideFlags: 0

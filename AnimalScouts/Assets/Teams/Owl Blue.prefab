@@ -1734,6 +1734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 270925030523087039}
   - component: {fileID: 270925030523087506}
+  - component: {fileID: -7602658863890603673}
   m_Layer: 0
   m_Name: Owl Blue
   m_TagString: Untagged
@@ -1780,6 +1781,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-7602658863890603673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270925030523087222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feacc5560c34d7d43822f38990eb4cf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSize: 8
+  ySize: 16
+  numMoves: 4
+  isRed: 0
 --- !u!1 &270925030523087225
 GameObject:
   m_ObjectHideFlags: 0
