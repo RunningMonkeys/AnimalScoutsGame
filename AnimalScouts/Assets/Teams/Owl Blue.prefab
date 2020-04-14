@@ -177,7 +177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270925030523087067}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 2.0747995e-16, y: 20.8, z: -0.7475252}
+  m_LocalPosition: {x: 2.0747995e-16, y: -0.93440664, z: -0.7475252}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 270925030523086975}
@@ -424,7 +424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270925030523087087}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.0000000140577, y: 24.974108, z: 3.6675878}
+  m_LocalPosition: {x: -0.0000000140577, y: 3.239702, z: 3.6675878}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 270925030523087039}
@@ -662,7 +662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270925030523087101}
   m_LocalRotation: {x: -0.005586464, y: -0.97950363, z: 0.027433164, w: -0.19947135}
-  m_LocalPosition: {x: -12.213481, y: 22.628208, z: 26.658548}
+  m_LocalPosition: {x: -12.213481, y: 0.8938027, z: 26.658548}
   m_LocalScale: {x: 100, y: 99.99999, z: 100}
   m_Children: []
   m_Father: {fileID: 270925030523087039}
@@ -924,7 +924,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270925030523087126}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 5.2, z: 0.9999999}
+  m_LocalPosition: {x: -0, y: 0, z: 0.9999999}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 270925030523087039}
@@ -1345,7 +1345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270925030523087168}
   m_LocalRotation: {x: 0.93894434, y: 0.04421653, z: -0.17324017, w: 0.29396644}
-  m_LocalPosition: {x: 4.3229833, y: 37.72065, z: 22.569967}
+  m_LocalPosition: {x: 4.3229833, y: 15.986242, z: 22.569967}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 270925030523087039}
@@ -1735,11 +1735,7 @@ GameObject:
   - component: {fileID: 270925030523087039}
   - component: {fileID: 270925030523087506}
   - component: {fileID: -7602658863890603673}
-<<<<<<< HEAD
   - component: {fileID: -1117379797224803123}
-=======
-  - component: {fileID: -3832127601904856312}
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Layer: 0
   m_Name: Owl Blue
   m_TagString: Untagged
@@ -1802,11 +1798,7 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 0
-<<<<<<< HEAD
 --- !u!82 &-1117379797224803123
-=======
---- !u!82 &-3832127601904856312
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1816,15 +1808,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-<<<<<<< HEAD
   m_audioClip: {fileID: 8300000, guid: 58f2c1c697008442c88a1c9a6409afac, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-=======
-  m_audioClip: {fileID: 8300000, guid: 3cdf47f56cc962944a9d495bae507b86, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.2
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1976,6 +1962,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 270925030523087039}
     m_Modifications:
+    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
+        type: 3}
+      propertyPath: m_Name
+      value: Base (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 299316580156128684, guid: b8e3ce519e4c5414fa7228e383c59d6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2045,11 +2036,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 26.66667
-      objectReference: {fileID: 0}
-    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
-        type: 3}
-      propertyPath: m_Name
-      value: Base (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e3ce519e4c5414fa7228e383c59d6f, type: 3}

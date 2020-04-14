@@ -165,11 +165,7 @@ GameObject:
   - component: {fileID: 4453843937235493894}
   - component: {fileID: 6000264437404420476}
   - component: {fileID: 2797727243515056362}
-<<<<<<< HEAD
   - component: {fileID: -7891802453397373120}
-=======
-  - component: {fileID: -6370619661667534159}
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Layer: 0
   m_Name: Wolf Red
   m_TagString: Untagged
@@ -232,11 +228,7 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 1
-<<<<<<< HEAD
 --- !u!82 &-7891802453397373120
-=======
---- !u!82 &-6370619661667534159
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,15 +238,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-<<<<<<< HEAD
   m_audioClip: {fileID: 8300000, guid: 9ca3c52fb5a8048ada4537bdf5925cdc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-=======
-  m_audioClip: {fileID: 8300000, guid: 3cdf47f56cc962944a9d495bae507b86, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.2
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Pitch: 1
   Loop: 0
   Mute: 0

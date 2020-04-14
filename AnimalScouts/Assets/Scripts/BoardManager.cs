@@ -27,7 +27,6 @@ public class BoardManager : MonoBehaviour
 	
 	private const float TILE_SIZE = 1.0f;
 	private const float TILE_OFFEST = 0.5f;
-	private const float PLAYER_OFFEST = .2f;
 	
 	private int selectionX = -1;
 	private int selectionY = -1;
@@ -71,16 +70,14 @@ public class BoardManager : MonoBehaviour
 	private void SpawnPlayer(int index, int x, int y)
 	{
 		GameObject go;
-		Vector3 vect = GetTileCenter(x,y);
-		vect.y += PLAYER_OFFEST;
 		if(index % 2 == 1)
 		{
 			Quaternion reverse = new Quaternion(0, 180, 0,0);
-			go = Instantiate(playerPrefabs[index],vect , reverse) as GameObject;
+			go = Instantiate(playerPrefabs[index], GetTileCenter(x,y), reverse) as GameObject;
 		}
 		else
 		{
-			go = Instantiate(playerPrefabs[index], vect , Quaternion.identity) as GameObject;
+			go = Instantiate(playerPrefabs[index], GetTileCenter(x,y) , Quaternion.identity) as GameObject;
 		}
 		Pieces[x,y] = go.GetComponent<Piece>();
 		Pieces[x,y].setPosition(x,y);

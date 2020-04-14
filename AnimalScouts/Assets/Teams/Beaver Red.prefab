@@ -3064,11 +3064,7 @@ GameObject:
   - component: {fileID: 5429176161480268484}
   - component: {fileID: 2725325617193580478}
   - component: {fileID: 2237304966048933528}
-<<<<<<< HEAD
   - component: {fileID: -7391424808533943135}
-=======
-  - component: {fileID: -6716738123503806147}
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Layer: 0
   m_Name: Beaver Red
   m_TagString: Untagged
@@ -3132,11 +3128,7 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 1
-<<<<<<< HEAD
 --- !u!82 &-7391424808533943135
-=======
---- !u!82 &-6716738123503806147
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3146,15 +3138,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-<<<<<<< HEAD
   m_audioClip: {fileID: 8300000, guid: beca0cad811b442eca7f7122121de1ae, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-=======
-  m_audioClip: {fileID: 8300000, guid: 3cdf47f56cc962944a9d495bae507b86, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.2
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Pitch: 1
   Loop: 0
   Mute: 0

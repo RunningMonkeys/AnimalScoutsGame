@@ -946,11 +946,7 @@ GameObject:
   - component: {fileID: 2937353075855957575}
   - component: {fileID: 5064738474223940413}
   - component: {fileID: 5029893345438869794}
-<<<<<<< HEAD
   - component: {fileID: -7190373548123975509}
-=======
-  - component: {fileID: 5279893712075463977}
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Layer: 0
   m_Name: Beaver Blue
   m_TagString: Untagged
@@ -1014,11 +1010,7 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 0
-<<<<<<< HEAD
 --- !u!82 &-7190373548123975509
-=======
---- !u!82 &5279893712075463977
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1028,15 +1020,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-<<<<<<< HEAD
   m_audioClip: {fileID: 8300000, guid: beca0cad811b442eca7f7122121de1ae, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-=======
-  m_audioClip: {fileID: 8300000, guid: 3cdf47f56cc962944a9d495bae507b86, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.2
->>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3214,6 +3200,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2937353075855957575}
     m_Modifications:
+    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
+        type: 3}
+      propertyPath: m_Name
+      value: Base (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 299316580156128684, guid: b8e3ce519e4c5414fa7228e383c59d6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3283,11 +3274,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
-        type: 3}
-      propertyPath: m_Name
-      value: Base (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e3ce519e4c5414fa7228e383c59d6f, type: 3}
