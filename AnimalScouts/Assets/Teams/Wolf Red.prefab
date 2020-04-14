@@ -168,10 +168,13 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: -7891802453397373120}
 =======
   - component: {fileID: -6370619661667534159}
 >>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
+=======
+>>>>>>> parent of 84ba52c... All but the owls work
 =======
 >>>>>>> parent of 84ba52c... All but the owls work
 =======
@@ -238,6 +241,7 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -346,6 +350,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> parent of 84ba52c... All but the owls work
 =======
 >>>>>>> parent of 84ba52c... All but the owls work
 =======
