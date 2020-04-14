@@ -62,6 +62,20 @@ Sounds:
 	Uploaded: 05.17.09
 	License: Personal Use Only
 
+	- Beaver
+	http://soundbible.com/2039-Tree-Fall-Small.html
+	Title: Tree Fall Small
+	Uploaded: 08.07.12
+	License: Attribution 3.0
+	Recorded by Daniel Simion
+
+	- Lizard
+	http://soundbible.com/1373-Velociraptor-Call.html
+	Title: Velociraptor Call
+	Uploaded: 02.20.10
+	License: Attribution 3.0
+	Recorded by snottyboi
+
 
 2D:
 	- Grass
