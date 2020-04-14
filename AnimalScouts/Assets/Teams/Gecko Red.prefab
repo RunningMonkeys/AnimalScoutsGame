@@ -446,10 +446,13 @@ GameObject:
   - component: {fileID: 7930811801979541505}
   - component: {fileID: -1748038244702558658}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 2844131072753512659}
 =======
   - component: {fileID: -3156217941519579269}
 >>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
+=======
+>>>>>>> parent of 84ba52c... All but the owls work
   m_Layer: 0
   m_Name: Gecko Red
   m_TagString: Untagged
@@ -511,6 +514,7 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!82 &2844131072753512659
 =======
@@ -617,6 +621,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> parent of 84ba52c... All but the owls work
 --- !u!1 &3974727480845609465
 GameObject:
   m_ObjectHideFlags: 0
