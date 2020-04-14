@@ -1050,7 +1050,11 @@ GameObject:
   - component: {fileID: 5608087987110023627}
   - component: {fileID: 2547328258844703921}
   - component: {fileID: 778678750136707067}
+<<<<<<< HEAD
   - component: {fileID: 7476723077126554117}
+=======
+  - component: {fileID: -1502138569689355907}
+>>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Layer: 0
   m_Name: Gecko Blue
   m_TagString: Untagged
@@ -1112,7 +1116,11 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 0
+<<<<<<< HEAD
 --- !u!82 &7476723077126554117
+=======
+--- !u!82 &-1502138569689355907
+>>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1122,9 +1130,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
+<<<<<<< HEAD
   m_audioClip: {fileID: 8300000, guid: 8f7d9aa057abf4eb989e657ced603973, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
+=======
+  m_audioClip: {fileID: 8300000, guid: 3cdf47f56cc962944a9d495bae507b86, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+>>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1246,11 +1260,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5608087987110023627}
     m_Modifications:
-    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
-        type: 3}
-      propertyPath: m_Name
-      value: Base (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 299316580156128684, guid: b8e3ce519e4c5414fa7228e383c59d6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1320,6 +1329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
+        type: 3}
+      propertyPath: m_Name
+      value: Base (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e3ce519e4c5414fa7228e383c59d6f, type: 3}

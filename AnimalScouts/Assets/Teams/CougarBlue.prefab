@@ -1237,7 +1237,11 @@ GameObject:
   - component: {fileID: 6577321888971955010}
   - component: {fileID: 3876847940195038776}
   - component: {fileID: -1470525911889797365}
+<<<<<<< HEAD
   - component: {fileID: -4959047307869576048}
+=======
+  - component: {fileID: 4353183331801219403}
+>>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Layer: 0
   m_Name: CougarBlue
   m_TagString: Untagged
@@ -1302,7 +1306,11 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 0
+<<<<<<< HEAD
 --- !u!82 &-4959047307869576048
+=======
+--- !u!82 &4353183331801219403
+>>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1312,9 +1320,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
+<<<<<<< HEAD
   m_audioClip: {fileID: 8300000, guid: b5eadcdcf17f94cddbf2c28266c8eba3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
+=======
+  m_audioClip: {fileID: 8300000, guid: 3cdf47f56cc962944a9d495bae507b86, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+>>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1467,11 +1481,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6577321888971955010}
     m_Modifications:
-    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
-        type: 3}
-      propertyPath: m_Name
-      value: Base (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 299316580156128684, guid: b8e3ce519e4c5414fa7228e383c59d6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1541,6 +1550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.53333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
+        type: 3}
+      propertyPath: m_Name
+      value: Base (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e3ce519e4c5414fa7228e383c59d6f, type: 3}
