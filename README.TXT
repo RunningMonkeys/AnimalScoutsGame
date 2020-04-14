@@ -62,6 +62,13 @@ Sounds:
 	Uploaded: 05.17.09
 	License: Personal Use Only
 
+	- Lizard
+	http://soundbible.com/1373-Velociraptor-Call.html
+	Title: Velociraptor Call
+	Uploaded: 02.20.10
+	License: Attribution 3.0
+	Recorded by snottyboi
+
 
 2D:
 	- Grass
