@@ -3065,13 +3065,10 @@ GameObject:
   - component: {fileID: 2725325617193580478}
   - component: {fileID: 2237304966048933528}
 <<<<<<< HEAD
-<<<<<<< HEAD
   - component: {fileID: -7391424808533943135}
 =======
   - component: {fileID: -6716738123503806147}
 >>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
-=======
->>>>>>> parent of 84ba52c... All but the owls work
   m_Layer: 0
   m_Name: Beaver Red
   m_TagString: Untagged
@@ -3135,7 +3132,6 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!82 &-7391424808533943135
 =======
@@ -3242,8 +3238,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-=======
->>>>>>> parent of 84ba52c... All but the owls work
 --- !u!1 &9121780560693154757
 GameObject:
   m_ObjectHideFlags: 0

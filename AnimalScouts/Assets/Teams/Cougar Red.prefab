@@ -1179,13 +1179,10 @@ GameObject:
   - component: {fileID: 4370123250674520872}
   - component: {fileID: 8074513028239888400}
 <<<<<<< HEAD
-<<<<<<< HEAD
   - component: {fileID: 8026372438562603860}
 =======
   - component: {fileID: -6483551881831898834}
 >>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
-=======
->>>>>>> parent of 84ba52c... All but the owls work
   m_Layer: 0
   m_Name: Cougar Red
   m_TagString: Untagged
@@ -1250,7 +1247,6 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!82 &8026372438562603860
 =======
@@ -1357,8 +1353,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-=======
->>>>>>> parent of 84ba52c... All but the owls work
 --- !u!1 &7501715920831199776
 GameObject:
   m_ObjectHideFlags: 0

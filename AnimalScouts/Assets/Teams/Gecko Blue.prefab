@@ -1051,13 +1051,10 @@ GameObject:
   - component: {fileID: 2547328258844703921}
   - component: {fileID: 778678750136707067}
 <<<<<<< HEAD
-<<<<<<< HEAD
   - component: {fileID: 7476723077126554117}
 =======
   - component: {fileID: -1502138569689355907}
 >>>>>>> 84ba52ce4d85c9e210351f43cbfc3d9e5c1d669b
-=======
->>>>>>> parent of 84ba52c... All but the owls work
   m_Layer: 0
   m_Name: Gecko Blue
   m_TagString: Untagged
@@ -1119,7 +1116,6 @@ MonoBehaviour:
   ySize: 16
   numMoves: 4
   isRed: 0
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!82 &7476723077126554117
 =======
@@ -1226,8 +1222,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-=======
->>>>>>> parent of 84ba52c... All but the owls work
 --- !u!1 &9127913240293163828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,11 +1260,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5608087987110023627}
     m_Modifications:
-    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
-        type: 3}
-      propertyPath: m_Name
-      value: Base (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 299316580156128684, guid: b8e3ce519e4c5414fa7228e383c59d6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1340,6 +1329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675104340297671053, guid: b8e3ce519e4c5414fa7228e383c59d6f,
+        type: 3}
+      propertyPath: m_Name
+      value: Base (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e3ce519e4c5414fa7228e383c59d6f, type: 3}
