@@ -1,6 +1,31 @@
 
 
+Sound Design:
+	The Animals, the wolf, the cougar and the owl sounds were used to mimic the real animal sounds that they make. Each time the player clicks on an animal they will play their suggested sound. The wolf has a howling sound, the owl hoots, these sounds we thought are naturally made by these animals so the player can easily recognize them. The cougar had to be replaced by a baby lion roar, the pitch of the roar helped blend the sound to a cougars roar. The Lizard and the beaver were the most difficult to find and other sounds had to be stretched to fit the character. The lizard sound is a velociraptor cry, when turned down it tries to mimic a small lizard. The beaver was and still in progress. Unable to find a beaver sound bite we decided to use the sound of a falling tree, beavers are known for chopping down trees and we thought the player might be able to associate that sound with the beaver. The has to sound of a squirrel, the noise it makes feels like it can be adjusted to fit the beaver.
 
+	The game board has background music playing while playing on a loop. For this song we needed something that a player would not mind listening over and over again. For this we searched for video games that were similar to our game, animal scouts is a board game so games in the Mario series were used. Mario Party and Mario Golf have easy listening experiences where the music is not fast paced or too aggressive to the player and were used in our game. The other sounds used on the board were aimed to help the player determine when they have made a correct move. A clapping and bell sounds is used to notify the player that they have successfully completed their turn and no sound meaning that your turn is not complete. These two sounds had to be short so as not to distract the next player when their turn comes.
+
+
+UI Design:
+	Instances of broken UI design principles: 
+
+Colors on the board game, after class we were told not to use deep saturated colors. The green for grass, blue and red for the sides of each player were affected by this.
+
+Broken colors: 
+
+Correction: change the texture of each layer.
+
+
+Characters started as simple ideas and stationary.
+Broken:		           Correction: Giving the character a depth and movement
+
+
+Clarity; at first, it was unclear who makes the first move
+Broken:	
+
+Correction: GO light only displayed on the side whose turn it is
+
+See Design doc for pictures
 
 
 
