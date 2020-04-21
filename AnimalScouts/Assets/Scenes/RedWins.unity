@@ -773,7 +773,8 @@ MonoBehaviour:
     08.07.12\n\tLicense: Attribution 3.0\n\tRecorded by Daniel Simion\n\n\t- Lizard\n\tTitle:
     Velociraptor Call\n\tUploaded: 02.20.10\n\tLicense: Attribution 3.0\n\tRecorded
     by snottyboi\n\n\t- Opening Theme\n\tAlbum name: Mario Golf 64\n\tSong name: main
-    menu"
+    menu\n\t\n\t- Ending Theme\n\tAlbum name: Mario Kart 64\n\tSong name: Trophy Presentations
+    (Part 2)"
 --- !u!222 &3182948354327202681
 CanvasRenderer:
   m_ObjectHideFlags: 0

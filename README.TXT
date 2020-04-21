@@ -88,6 +88,12 @@ Sounds:
 	Album name: Mario Golf 64
 	Song name: main menu
 
+	- Ending Theme
+	https://downloads.khinsider.com/game-soundtracks/album/mario-kart-64/28%2520Trophy%2520Presentations%2520%2528Part%25202%2529.mp3
+	Album name: Mario Kart 64
+	Song name: Trophy Presentations (Part 2)
+
+
 
 
 
