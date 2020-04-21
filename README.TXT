@@ -83,6 +83,13 @@ Sounds:
 	License: Attribution 3.0
 	Recorded by snottyboi
 
+	- Opening Theme
+	https://downloads.khinsider.com/game-soundtracks/album/mario-golf-64/02%2520-%2520main%2520menu.mp3
+	Album name: Mario Golf 64
+	Song name: main menu
+
+
+
 
 2D:
 	- Grass
