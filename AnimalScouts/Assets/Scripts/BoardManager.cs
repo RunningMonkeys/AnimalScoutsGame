@@ -53,7 +53,7 @@ public class BoardManager : MonoBehaviour
 		SpawnTile(3,2,3);
 		SpawnTile(3,2,2);
 		SpawnTile(3,3,2);
-		SpawnTile(4,4,5);
+		SpawnTile(4,4,4);
 		SpawnTile(4,5,5);
 		SpawnTile(4,6,6);
 		SpawnTile(4,6,7);
@@ -67,11 +67,11 @@ public class BoardManager : MonoBehaviour
 		SpawnTile(2,2,12);
 		SpawnTile(2,1,13);
 		SpawnTile(3,6,12);
-		SpawnTile(3,6,12);
+		SpawnTile(3,7,12);
 		SpawnTile(3,5,12);
 		SpawnTile(3,5,13);
 		SpawnTile(3,4,13);
-		SpawnTile(4,3,10);
+		SpawnTile(4,3,11);
 		SpawnTile(4,2,10);
 		SpawnTile(4,1,9);
 		SpawnTile(4,1,8);
