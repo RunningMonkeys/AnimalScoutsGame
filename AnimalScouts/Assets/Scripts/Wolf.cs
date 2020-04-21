@@ -22,6 +22,10 @@ public class Wolf : Piece
 				//this should never happen
 				Debug.Log("Tile Not Found");
 			}
+			else if (t.tileType == 3)
+			{
+				break;
+			}
 			else if(p == null)
 			{
 				r[CurrentX+i,CurrentY] = true;
@@ -44,6 +48,10 @@ public class Wolf : Piece
 			{
 				//this should never happen
 				Debug.Log("Tile Not Found");
+			}
+			else if (t.tileType == 3)
+			{
+				break;
 			}
 			else if(p == null)
 			{
@@ -68,6 +76,10 @@ public class Wolf : Piece
 				//this should never happen
 				Debug.Log("Tile Not Found");
 			}
+			else if (t.tileType == 3)
+			{
+				break;
+			}
 			else if(p == null)
 			{
 				r[CurrentX,CurrentY+i] = true;
@@ -91,6 +103,10 @@ public class Wolf : Piece
 				//this should never happen
 				Debug.Log("Tile Not Found");
 			}
+			else if (t.tileType == 3)
+			{
+				break;
+			}
 			else if(p == null)
 			{
 				r[CurrentX,CurrentY-i] = true;
@@ -113,6 +129,10 @@ public class Wolf : Piece
 			{
 				//this should never happen
 				Debug.Log("Tile Not Found");
+			}
+			else if (t.tileType == 3)
+			{
+				break;
 			}
 			else if(p == null)
 			{
@@ -138,6 +158,10 @@ public class Wolf : Piece
 				//this should never happen
 				Debug.Log("Tile Not Found");
 			}
+			else if (t.tileType == 3)
+			{
+				break;
+			}
 			else if(p == null)
 			{
 				r[CurrentX-i,CurrentY+i] = true;
@@ -162,6 +186,10 @@ public class Wolf : Piece
 				//this should never happen
 				Debug.Log("Tile Not Found");
 			}
+			else if (t.tileType == 3)
+			{
+				break;
+			}
 			else if(p == null)
 			{
 				r[CurrentX-i,CurrentY-i] = true;
@@ -169,6 +197,7 @@ public class Wolf : Piece
 					break;
 				}
 			}
+			
 			else if( p.isRed != isRed)
 			{
 				r[CurrentX-i, CurrentY-i] =true; 
@@ -185,6 +214,10 @@ public class Wolf : Piece
 			{
 				//this should never happen
 				Debug.Log("Tile Not Found");
+			}
+			else if (t.tileType == 3)
+			{
+				break;
 			}
 			else if(p == null)
 			{

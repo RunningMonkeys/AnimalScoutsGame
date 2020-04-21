@@ -101,16 +101,21 @@ public class BoardManager : MonoBehaviour
 	{
 		Pieces = new Piece[xSize,ySize];
 		activePlayer = new List<GameObject>();
+		//owls
 		SpawnPlayer(0,0,0);
 		SpawnPlayer(1,7,15);
-		SpawnPlayer(2,5,1);
+		//beavers
+		SpawnPlayer(2,1,1);
 		SpawnPlayer(3,6,14);
+		//cougars
 		SpawnPlayer(4,4,1);
-		SpawnPlayer(5,6,15);
-		SpawnPlayer(6,6,1);
+		SpawnPlayer(5,3,14);
+		//Geckos
+		SpawnPlayer(6,7,1);
 		SpawnPlayer(7,0,14);
-		SpawnPlayer(8,1,1);
-		SpawnPlayer(9,1,15);
+		//wolves
+		SpawnPlayer(8,7,0);
+		SpawnPlayer(9,0,15);
 		
 	}
 	
