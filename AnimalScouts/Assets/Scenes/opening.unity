@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 1359063852}
   - component: {fileID: 1359063851}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: banner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 1605118583}
   - component: {fileID: 1605118582}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -474,7 +474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -410, y: 602}
+  m_AnchoredPosition: {x: -410, y: 612}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1605118582
@@ -510,9 +510,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t     \t\n\n\n\nBe the first to find the Flag\n\nControls:\nLeft
-    Click on the Mouse to select a character, \nvalid moves will be displayed in yellow.\n\nPress
-    \"Q\" to Quit to the Game at anytime\nPress the Space Bar to Play"
+  m_Text: "\t\t\t\t     \t\n\n\n\nBe the first team to find the Flag!\nHave your animal
+    search the floor tiles\nto find power ups and the flag.\n\nControls:\nLeft Click
+    on the Mouse to select a character, \nvalid moves will be displayed in yellow.\n\nPress
+    \"Q\" to Quit to the Game at anytime.\n       \n         Press the Space Bar to
+    Play "
 --- !u!222 &1605118583
 CanvasRenderer:
   m_ObjectHideFlags: 0
