@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class BoardManager : MonoBehaviour
@@ -12,7 +13,7 @@ public class BoardManager : MonoBehaviour
 
 	public static BoardManager Instance{set;get;}
 	private bool[,] allowedMoves{set;get;}
-	private int[,] tileGrid{set;get;}
+	public Tile[,] tileGrid{set;get;}
 
 	public Piece[,] Pieces{set;get;}
 	private Piece selectedPiece;
@@ -25,6 +26,10 @@ public class BoardManager : MonoBehaviour
 	public List<GameObject> activePlayer;
 	public List<GameObject> tilePrefabs;
 	
+	private int redPlayerNumber = 5;
+	private int bluePlayerNumber = 5;
+	
+	
 	private const float TILE_SIZE = 1.0f;
 	private const float TILE_OFFEST = 0.5f;
 	private const float PLAY_HEIGHT = 0f;
@@ -34,13 +39,63 @@ public class BoardManager : MonoBehaviour
 	
 	private void SpawnBoard()
 	{
+		
+		//red side
+		
+		SpawnTile(2,1,0);
+		SpawnTile(2,1,1);
+		SpawnTile(2,1,6);
+		SpawnTile(2,5,1);
+		SpawnTile(2,5,3);
+		SpawnTile(2,6,2);
+		SpawnTile(3,0,3);
+		SpawnTile(3,1,3);
+		SpawnTile(3,2,3);
+		SpawnTile(3,2,2);
+		SpawnTile(3,3,2);
+		SpawnTile(4,4,5);
+		SpawnTile(4,5,5);
+		SpawnTile(4,6,6);
+		SpawnTile(4,6,7);
+		SpawnTile(4,7,7);
+		
+		//blue side
+		SpawnTile(2,6,15);
+		SpawnTile(2,6,14);
+		SpawnTile(2,6,9);
+		SpawnTile(2,2,14);
+		SpawnTile(2,2,12);
+		SpawnTile(2,1,13);
+		SpawnTile(3,6,12);
+		SpawnTile(3,6,12);
+		SpawnTile(3,5,12);
+		SpawnTile(3,5,13);
+		SpawnTile(3,4,13);
+		SpawnTile(4,3,10);
+		SpawnTile(4,2,10);
+		SpawnTile(4,1,9);
+		SpawnTile(4,1,8);
+		SpawnTile(4,0,8);
+		
+		
 		for(int i = 0; i < xSize; i++)
 		{
 			for(int j = 0; j< ySize; j++)
 			{
-				SpawnTile(tileGrid[i,j],i,j);
+				if(tileGrid[i,j] == null)
+				{
+					SpawnTile(1,i,j);
+				}
 			}
 		}
+		
+		//randomFlag locations for now.
+		int x = Random.Range(0,7);
+		int y = Random.Range(0,7);
+		tileGrid[x,y].isFlag = true;
+		x = Random.Range(0,7);
+		y = Random.Range(8,15);
+		tileGrid[x,y].isFlag = true;
 	}
 	private void SpawnAllPlayers()
 	{
@@ -91,6 +146,13 @@ public class BoardManager : MonoBehaviour
 	private void SpawnTile(int index, int x, int y){
 		GameObject go;
 		go = Instantiate(tilePrefabs[index], GetTileCenter(x,y), Quaternion.identity) as GameObject;
+		tileGrid[x,y] = go.GetComponent<Tile>();
+		if(y< 8){
+			tileGrid[x,y].redSide = true;
+		}
+		else{
+			tileGrid[x,y].redSide = false;
+		}
 	}
 	
 	
@@ -123,14 +185,7 @@ public class BoardManager : MonoBehaviour
 
 		SelectionObject = Instantiate(SelectionPrefab, GetTileCenter(0,0) , Quaternion.identity) as GameObject;
 		Instance = this;
-		tileGrid = new int[xSize,ySize];
-		for(int i = 0; i < xSize; i++)
-		{
-			for(int j = 0; j < ySize; j++)
-			{
-				tileGrid[i,j]= 0;
-			}
-		}
+		tileGrid = new Tile[xSize,ySize];
 		SpawnBoard();
 		SpawnAllPlayers();
     }
@@ -164,12 +219,44 @@ public class BoardManager : MonoBehaviour
 				//capture the piece
 				activePlayer.Remove(p.gameObject);
 				Destroy(p.gameObject);
+				if(isRedTurn)
+				{
+					bluePlayerNumber--;
+				}
+				else{
+					redPlayerNumber--;
+				}
 			}
 			
 			Pieces[selectedPiece.CurrentX, selectedPiece.CurrentY] = null;
 			selectedPiece.transform.position = GetTileCenter(x,y);
 			Pieces[x,y] = selectedPiece;
 			Pieces[x,y].setPosition(x,y);
+			
+			if(tileGrid[x,y].flipTile(isRedTurn))
+			{
+				if(isRedTurn)
+				{
+					SceneManager.LoadScene("RedWins", LoadSceneMode.Additive);
+					
+				}
+				else{
+					
+					SceneManager.LoadScene("BlueWins", LoadSceneMode.Additive);
+				}
+			}
+			
+			if(bluePlayerNumber == 0)
+			{
+				SceneManager.LoadScene("RedWins", LoadSceneMode.Additive);
+				
+			}
+			else if (redPlayerNumber ==0)
+			{
+				
+				SceneManager.LoadScene("BlueWins", LoadSceneMode.Additive);
+			}
+			
 			isRedTurn = !isRedTurn;
 			aud.Play();
 		}
