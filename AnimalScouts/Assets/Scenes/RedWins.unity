@@ -944,7 +944,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "This game was made created at UIC in CS 426 Video Game Design Class. \nGame
-    Designers: Zeke ThornBurgh, Angela Cuevas, Michael Ybarra\n"
+    Designers: Zeke Thornburgh, Angela Cuevas, Michael Ybarra\n"
 --- !u!222 &3182948355772387207
 CanvasRenderer:
   m_ObjectHideFlags: 0
